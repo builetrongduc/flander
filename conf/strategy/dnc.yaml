@@ -1,0 +1,9 @@
+---
+name: dnc
+
+strategy:
+  _target_: flanders.strategies.dnc.DnC
+  num_malicious_clients: $(server.num_malicious)
+  niters: 5
+  c: 1
+  b: 0  # number of parameters to sample (dim. reduction)
